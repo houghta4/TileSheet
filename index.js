@@ -71,7 +71,7 @@ const onMouseOverTile = (e) => {
     let content = document.getElementById("content");
     const row = Math.floor(e.pageY / +formData.spriteSizeY);
     const col = Math.floor(e.pageX / +formData.spriteSizeX);
-    const idx = row * +formData.totalRows + col;
+    const idx = row * +formData.totalCols + col;
     content.title = `idx: ${idx}`;
 }
 
