@@ -38,10 +38,9 @@ const onFileSelect = (e) => {
 
 const onClickTile = (e) => {
     e.preventDefault();
-    console.log(formData);
     let results = document.getElementById("results");
     let entry = document.createElement("div");
-    let tileWrapper =document.createElement("div");
+    let tileWrapper = document.createElement("div");
     let tile = document.createElement("div");
     let tileDetails = document.createElement("div");
     const row = Math.floor(e.pageY / +formData.spriteSizeY);
@@ -81,7 +80,7 @@ window.onload = function (_e) {
     const form = document.getElementById("img-details");
     const content = document.getElementById("content");
     const file = document.getElementById("file-select");
-    
+
     form.addEventListener("submit", onFormSubmit);
     file.addEventListener("change", onFileSelect);
     content.addEventListener("click", onClickTile);
